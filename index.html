@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <div class="logo" data-en="My Portfolio" data-ja="私のポートフォリオ">My Portfolio</div>
+    <div class="logo" data-en="Portfolio" data-ja="ポートフォリオ">Portfolio</div>
 
     <!-- Language Switcher -->
     <select id="languageSwitcher">
@@ -31,40 +31,58 @@
 
   <section class="about">
     <h2 data-en="About Me" data-ja="自己紹介">About Me</h2>
-    <p data-en="I specialize in front-end development and love experimenting with modern web technologies."
+    <p data-en="My name is Islam Md Majharul. I'm 23 years old. I'm from Bangladesh. Curently I'm learning mostly front-end web development at Tokyo Multimedia College. "
        data-ja="私の名前はイスラム エムディ　マジャルルです。23歳です。バングラデシュ出身です。現在は東京マルチ.AI専門学校で主にフロントエンドWeb開発を学んでいます。">
        My name is Islam Md Majharul. I'm 23 years old. I'm from Bangladesh. Curently I'm learning mostly front-end web development at Tokyo Multimedia College.  
     </p>
   </section>
 
-  <section class="projects">
-    <h2 data-en="Projects" data-ja="プロジェクト">Projects</h2>
+ <section class="projects">
 
-    <div class="project-card">
-      <!-- 👇 Replace this image -->
-      <img src="img/project1.jpg" alt="Project 1" />
-      <!-- 👇 Change text -->
-      <h3 data-en="Portfolio Website" data-ja="ポートフォリオサイト">Portfolio Website</h3>
-      <p data-en="A responsive personal portfolio built with HTML, CSS, and JavaScript."
-         data-ja="HTML、CSS、JavaScriptで作成したレスポンシブなポートフォリオです。">
-         A responsive personal portfolio built with HTML, CSS, and JavaScript.
-      </p>
-    </div>
+  <!-- Skills Accordion -->
+  <div class="edu_bg">
+    <input type="checkbox" id="skills_title" >
+    <label for="skills_title" data-en="Skills" data-ja="スキル">Skills</label>
+    <ul class="mokuji_inner">
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li data-en="JLPT N3" data-ja="日本語能力試験　N3　合格">JLPT N3</li>
+    </ul>
+  </div>
 
-    <div class="project-card">
-      <!-- 👇 Replace this image -->
-      <img src="img/project2.jpg" alt="Project 2" />
-      <h3 data-en="Anime Gallery" data-ja="アニメギャラリー">Anime Gallery</h3>
-      <p data-en="A stylish image gallery featuring anime themes and smooth transitions."
-         data-ja="アニメをテーマにしたスタイリッシュな画像ギャラリーです。">
-         A stylish image gallery featuring anime themes and smooth transitions.
-      </p>
-    </div>
-  </section>
+<div class="incoming">
+    <input type="checkbox" id="incoming_title" >
+    <label for="incoming_title" data-en="Projects" data-ja="プロジェクト">Projects</label>
+    <ul class="incoming_inner">
+      <li data-en="Coming soon" data-ja="近日公開">Coming soon</li>
+    </ul>
+  </div>
+
+  <!-- Education Accordion -->
+  <div class="mokuji">
+    <input type="checkbox" id="edu_title">
+    <label for="edu_title" data-en="Educational Background" data-ja="学歴">Educational Background</label>
+    <ul class="mokuji_inner">
+      <li>2021 12　Ibne Taimiya School & College　(高等学校)　卒業</li>
+      <li>2022 10　豊橋日本語学校　入学</li>
+      <li>2024 3　豊橋日本語学校　卒業</li>
+      <li>2024 4　東京マルチ.AI専門学校　(WEBエンジニア科)　入学</li>
+      <li>2026 3　東京マルチ.AI専門学校　(WEBエンジニア科)　卒業見込み</li>
+    </ul>
+  </div>
+
+</section>
+
 
   <footer>
-    <p data-en="© 2025 Alex Mikey. All rights reserved." data-ja="© 2025 アレックス・マイキー. 無断転載を禁じます。">
-      © 2025 Alex Mikey. All rights reserved.
+    <p data-en="" data-ja="">
+      <ul class="footer">
+        <li class="Contact" data-en="Contact" data-ja="連絡先">Contact</li>
+        <li>Phone : 09022059968</li>
+        <li>Email : alexmikey619@gmail.com</li>
+      </ul>
     </p>
   </footer>
 
