@@ -459,4 +459,35 @@ header.shrink {
     background-attachment: scroll;
   }
 }
+@media (max-width: 768px) {
+  /* Allow horizontal scroll only when opened */
+  .mokuji {
+    overflow-x: hidden;         /* hide scroll unless opened */
+    position: relative;
+  }
+
+  /* When the accordion is opened, allow horizontal scroll */
+  #edu_title:checked ~ .mokuji_inner {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    background-color: #777;     /* keep same color as parent */
+    padding-bottom: 5px;        /* a bit of space for scrollbar */
+  }
+
+  /* Prevent background from stretching too far */
+  .mokuji_inner li {
+    display: block;             /* keep text listed vertically */
+    min-width: fit-content;     /* ensure content doesn’t stretch box */
+    background: none;           /* no extra bg behind items */
+  }
+
+  /* Keep closed state clean */
+  #edu_title:not(:checked) ~ .mokuji_inner {
+    overflow-x: hidden;
+  }
+}
+
+
 
